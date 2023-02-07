@@ -1,0 +1,69 @@
+###  get all siswa
+GET http://localhost:2000/siswa
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### create siswa
+POST http://localhost:2000/siswa
+Accept: application/json
+Content-Type: application/json
+PAS-API-KEY :MRGINZ
+{
+    "name" :"Bima",
+    "nis" :"1234",
+    "alamat" :"medan"
+}
+
+### get by id siswa
+GET http://localhost:2000/siswa/5
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### Update
+PUT http://localhost:2000/siswa/5
+Accept: application/json
+Content-Type: application/json
+PAS-API-KEY :MRGINZ
+{
+    "name" :"abc",
+    "nis" :"555",
+    "alamat" :"medan"
+}
+### delete
+DELETE http://localhost:2000/siswa/5
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### get all guru
+GET http://localhost:2000/guru
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### get by id guru
+GET http://localhost:2000/guru/GR02
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### Create guru
+POST http://localhost:2000/guru
+Accept: application/json
+Content-Type: application/json
+PAS-API-KEY :MRGINZ
+{
+    "id_guru" :"GR06",
+    "name" :"dsa",
+    "birth_day" :"2023-02-06T00:00:00Z",
+    "nig" :"12345",
+    "status" : false
+}
+
+### delete guru
+DELETE http://localhost:2000/guru/GR04
+Accept: application/json
+PAS-API-KEY :MRGINZ
+### Update guru
+PUT http://localhost:2000/guru/GR03
+Accept: application/json
+Content-Type: application/json
+PAS-API-KEY :MRGINZ
+{
+    "name" :"aji",
+    "birth_day" :"2023-02-06T00:00:00Z",
+    "nig" :"125",
+    "status" : false
+}
